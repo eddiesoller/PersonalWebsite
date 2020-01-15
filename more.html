@@ -1,12 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-
   <head>
-
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="Eddie Soller's personal website">
+    <meta name="author" content="Eddie Soller">
 
     <title>Eddie Soller</title>
 
@@ -22,16 +20,14 @@
 
     <!-- Custom styles for this template -->
     <link href="css/resume.min.css" rel="stylesheet">
-
   </head>
 
   <body id="page-top">
-
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top" id="sideNav">
       <a class="navbar-brand js-scroll-trigger" href="#page-top">
         <span class="d-block d-lg-none">Eddie Soller</span>
         <span class="d-none d-lg-block">
-          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="">
+          <img class="img-fluid img-profile rounded-circle mx-auto mb-2" src="img/profile.jpg" alt="profile picture">
         </span>
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,10 +44,10 @@
           <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#education">Education</a>
           </li>
-        <li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#projects">Projects</a>
           </li>
-<li class="nav-item">
+          <li class="nav-item">
             <a class="nav-link js-scroll-trigger" href="#interests">Interests</a>
           </li>
           <li class="nav-item">
@@ -68,7 +64,6 @@
     </nav>
 
     <div class="container-fluid p-0">
-
       <section class="resume-section p-3 p-lg-5 d-flex d-column" id="about">
         <div class="my-auto">
           <h1 class="mb-0">Eddie
@@ -143,9 +138,7 @@
               <span class="text-primary">March 2015 - September 2015</span>
             </div>
           </div>
-
         </div>
-
       </section>
 
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="education">
@@ -170,7 +163,6 @@
               <span class="text-primary">September 2008 - June 2012</span>
             </div>
           </div>
-
         </div>
       </section>
       
@@ -180,29 +172,28 @@
           <div class="resume-item d-flex flex-column flex-md-row mb-5">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">Transaction Tracer</h3>
-              <div class="subheading mb-3"><a href="https://transactiontracer.com/">transactiontracer.com</a></div>
+              <div class="subheading mb-3"><a href="https://transactiontracer.com/">transactiontracer.com</a> | <a href="https://transactiontracer.com/Transactions/Trace/4254" target="_blank">Example</a></div>
               <p>After stumbling upon some <a href="https://www.reddit.com/r/nba/comments/atbtlf/oc_i_made_a_timeline_of_what_happened_to_the/">interesting</a> <a href="https://www.reddit.com/r/nba/comments/c9t5dn/favale_okcs_serge_ibaka_trade_tree_remains_wild/">Reddit</a> <a href="https://www.reddit.com/r/nba/comments/av0k87/oc_the_bizarre_world_of_nba_trades/">posts</a> and a <a href="https://www.theringer.com/nba/2019/1/30/18202947/nba-transaction-trees">Ringer article</a> outlining the consequences of NBA trades, I searched for a tool that automatically generates transaction traces/trees. I didn't find anything so I made one!</p>
-              <center><a href="https://transactiontracer.com/Transactions/Trace/4254" target="_blank"><img class="project-image" src="img/projects/transaction_tracer/example.PNG" title="Transaction Tracer Example"></a></center>
+              <img class="project-image" src="img/projects/transaction_tracer/example.PNG" alt="transaction tracer example screenshot">
             </div>
           </div>
 
           <div class="resume-item d-flex flex-column flex-md-row">
             <div class="resume-content mr-auto">
               <h3 class="mb-0">NBA Power BI Report</h3>
-              <div class="subheading mb-3"><a href="https://drive.google.com/open?id=16RAvOI5eaMtQ9of_TmZsUwSq2KKux_8s">Power BI Report</a> | <a href="https://drive.google.com/open?id=126Xq6kpQT2Q4mH4rxBSupvhoRe_FKbi6">PDF Export Example</a></div>
+              <div class="subheading mb-3"><a href="https://drive.google.com/open?id=16RAvOI5eaMtQ9of_TmZsUwSq2KKux_8s" target="_blank">Power BI Report</a> | <a href="https://drive.google.com/open?id=126Xq6kpQT2Q4mH4rxBSupvhoRe_FKbi6" target="_blank">PDF Export Example</a></div>
               <p>At work, I use Power BI to load, transform, and visualize project schedule/status and resource availability data. I wanted to practice ETL and data visualizations with NBA data.</p>
-              <p>To retrieve data, the NBA has an official stats API. It isn't advertised or officially documented, but I found great documentation at <a href="http://nbasense.com/">nbasense</a>. I was able to directly retrieve data in Power BI by targeting an API endpoint URL and performing a few query steps to navigate through the JSON. However, I faced two major issues. Strangely, many of the endpoints failed to get a responses. Additionally, most of the endpoints require a single team or player to be identified. If I wanted data for all 30 teams, I would need to make 30 queries in Power Query. Adding functionality in Power BI to allow end users to change query parameters in the report would make things a lot easier.</p>
-              <p>Fortunately, I found a python library, <a href="https://github.com/swar/nba_api">nba_api</a>, that acts as a client to access the API data. With python, I could easily iterate over all of the teams and get data for each with a single query in Power BI. Also, the API endpoints that didn't work before somehow work with the python library.</p>
+              <p>To retrieve data, the NBA has an official stats API. It isn't advertised or officially documented, but I found great documentation at <a href="http://nbasense.com/" target="_blank">nbasense</a>. I was able to directly retrieve data in Power BI by targeting an API endpoint URL and performing a few query steps to navigate through the JSON. However, I faced two major issues. Strangely, many of the endpoints failed to get a responses. Additionally, most of the endpoints require a single team or player to be identified. If I wanted data for all 30 teams, I would need to make 30 queries in Power Query. Adding functionality in Power BI to allow end users to change query parameters in the report would make things a lot easier.</p>
+              <p>Fortunately, I found a python library, <a href="https://github.com/swar/nba_api" target="_blank">nba_api</a>, that acts as a client to access the API data. With python, I could easily iterate over all of the teams and get data for each with a single query in Power BI. Also, the API endpoints that didn't work before somehow work with the python library.</p>
               <p>None of the reported statistics are advanced by any means, but I think there's some interesting insights. I also really like the drillthrough capabilities to see additional information about individual teams and games.</p>
               <p>Please don't hesitate to contact me if you have any questions on the report was created or how to use it.</p>
-              <center><img class="project-image" src="img/projects/nba_power_bi/season_win_totals.PNG"></center>
-              <center><img class="project-image" src="img/projects/nba_power_bi/season_stat_ranks.PNG"></center>
-              <center><img class="project-image" src="img/projects/nba_power_bi/shot_type_charts.PNG"></center>
-              <center><img class="project-image" src="img/projects/nba_power_bi/team_details.PNG"></center>
-              <center><img class="project-image" src="img/projects/nba_power_bi/game_matchup.PNG"></center>
+              <img class="project-image" src="img/projects/nba_power_bi/season_win_totals.PNG" alt="season win totals screenshot">
+              <img class="project-image" src="img/projects/nba_power_bi/season_stat_ranks.PNG" alt="season stat ranks screenshot">
+              <img class="project-image" src="img/projects/nba_power_bi/shot_type_charts.PNG" alt="shot type charts screenshot">
+              <img class="project-image" src="img/projects/nba_power_bi/team_details.PNG" alt="team details screenshot">
+              <img class="project-image" src="img/projects/nba_power_bi/game_matchup.PNG" alt="game matchup screenshot">
             </div>
           </div>
-
         </div>
       </section>
 
@@ -217,87 +208,79 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="music">
         <div class="my-auto">
           <h2 class="mb-5">Music</h2>
-          <div class="row">
-            <div class="column">
-              <a href="https://chorus.fm/share/album/the+dangerous+summer/reach+for+the+sun" target="_blank">
-                <img src="img/music/reach_for_the_sun.jpg" title="The Dangerous Summer - Reach For The Sun">
-              </a>
-              <a href="https://chorus.fm/share/album/the+1975/a+brief+inquiry+into+online+relationships" target="_blank">
-                <img src="img/music/a_brief_inquiry.png" title="The 1975 - A Brief Inquiry Into Online Relationships">
-              </a>
-              <a href="https://chorus.fm/share/album/manchester+orchestra/a+black+mile+to+the+surface" target="_blank">
-                <img src="img/music/a_black_mile_to_the_surface.jpg" title="Manchester Orchestra - A Black Miles To The Surface">
-              </a>
-              <a href="https://chorus.fm/share/album/copeland/you+are+my+sunshine" target="_blank">
-                <img src="img/music/you_are_my_sunshine.jpg" title="Copeland - You Are My Sunshine">
-              </a>
-              <a href="https://chorus.fm/share/album/modern+baseball/holy+ghost" target="_blank">
-                <img src="img/music/holy_ghost.jpg" title="Modern Baseball - Holy Ghost">
-              </a>
-              <a href="https://chorus.fm/share/album/pianos+become+the+teeth/keep+you" target="_blank">
-                <img src="img/music/keep_you.jpg" title="Pianos Become The Teeth - Keep You">
-              </a>
-            </div>
-            <div class="column">
-              <a href="https://chorus.fm/share/album/the+hotelier/home+like+noplace+is+there" target="_blank">
-                <img src="img/music/home_like_noplace_is_there.jpg" title="The Hotelier - Home, Like Noplace Is There">
-              </a>
-              <a href="https://chorus.fm/share/album/hippo+campus/bambi" target="_blank">
-                <img src="img/music/bambi.jpg" title="Hippo Campus - Bambi">
-              </a>
-              <a href="https://chorus.fm/share/album/deafheaven/sunbather" target="_blank">
-                <img src="img/music/sunbather.jpg" title="Deafheaven - Sunbather">
-              </a>
-              <a href="https://chorus.fm/share/album/dear+and+the+headlights/small+steps,+heavy+hooves" target="_blank">
-                <img src="img/music/small_steps_heavy_hooves.jpg" title="Dear And The Headlights - Small Steps, Heavy Hooves">
-              </a>
-              <a href="https://chorus.fm/share/album/oso+oso/basking+in+the+glow" target="_blank">
-                <img src="img/music/basking_in_the_glow.jpg" title="Oso Oso - Basking In The Glow">
-              </a>
-              <a href="https://chorus.fm/share/album/clairo/immunity" target="_blank">
-                <img src="img/music/immunity.jpg" title="Clairo - Immunity">
-              </a>
-            </div>
-            <div class="column">
-              <a href="https://chorus.fm/share/album/tokyo+polic+club/champ" target="_blank">
-                <img src="img/music/champ.jpg" title="Tokyo Police Club - Champ">
-              </a>
-              <a href="https://chorus.fm/share/album/peach+pit/being+so+normal" target="_blank">
-                <img src="img/music/being_so_normal.jpg" title="Peach Pit - Being So Normal">
-              </a>
-              <a href="https://chorus.fm/share/album/american+football/lp3" target="_blank">
-                <img src="img/music/lp3.jpg" title="American Football - LP3">
-              </a>
-              <a href="https://chorus.fm/share/album/the+world+is+a+beautiful+place+and+i+am+no+longer+afraid+to+die/harmlessness" target="_blank">
-                <img src="img/music/harmlessness.jpg" title="TWIABP - Harmlessness">
-              </a>
-              <a href="https://chorus.fm/share/album/foxing/nearer+my+god" target="_blank">
-                <img src="img/music/nearer_my_god.jpg" title="Foxing - Nearer My God">
-              </a>
-              <a href="https://chorus.fm/share/album/the+dangerous+summer/mother+nature" target="_blank">
-                <img src="img/music/mother_nature.jpg" title="The Dangerous Summer - Mother Nature">
-              </a>
-            </div>
-            <div class="column">
-              <a href="https://chorus.fm/share/album/bon+iver/bon+iver" target="_blank">
-                <img src="img/music/bon_iver.jpg" title="Bon Iver - Bon Iver">
-              </a>
-              <a href="https://chorus.fm/share/album/the+menzingers/after+the+party" target="_blank">
-                <img src="img/music/after_the_party.jpg" title="The Menzingers - After The Party">
-              </a>
-              <a href="https://chorus.fm/share/album/pup/morbid+stuff" target="_blank">
-                <img src="img/music/morbid_stuff.jpg" title="Pup - Morbid Stuff">
-              </a>
-              <a href="https://chorus.fm/share/album/sorority+noise/joy,+departed" target="_blank">
-                <img src="img/music/joy_departed.jpg" title="Sorority Noise - Joy, Departed">
-              </a>
-              <a href="https://chorus.fm/share/album/bombay+bicycle+club/so+long,+see+you+tomorrow" target="_blank">
-                <img src="img/music/so_long_see_you_tomorrow.jpg" title="Bombay Bicycle Club - So Long, See You Tomorrow">
-              </a>
-              <a href="https://chorus.fm/share/album/somos/prison+on+a+hill" target="_blank">
-                <img src="img/music/prison_on_a_hill.jpg" title="Somos - Prison On A Hill">
-              </a>
-            </div>
+          <div class="media-section">
+            <a href="https://chorus.fm/share/album/the+dangerous+summer/reach+for+the+sun" target="_blank">
+              <img class="liked-media" src="img/music/reach_for_the_sun.jpg" title="The Dangerous Summer - Reach For The Sun">
+            </a>
+            <a href="https://chorus.fm/share/album/the+hotelier/home+like+noplace+is+there" target="_blank">
+              <img class="liked-media" src="img/music/home_like_noplace_is_there.jpg" title="The Hotelier - Home, Like Noplace Is There">
+            </a>
+            <a href="https://chorus.fm/share/album/tokyo+polic+club/champ" target="_blank">
+              <img class="liked-media" src="img/music/champ.jpg" title="Tokyo Police Club - Champ">
+            </a>
+            <a href="https://chorus.fm/share/album/bon+iver/bon+iver" target="_blank">
+              <img class="liked-media" src="img/music/bon_iver.jpg" title="Bon Iver - Bon Iver">
+            </a>
+            <a href="https://chorus.fm/share/album/the+1975/a+brief+inquiry+into+online+relationships" target="_blank">
+              <img class="liked-media" src="img/music/a_brief_inquiry.png" title="The 1975 - A Brief Inquiry Into Online Relationships">
+            </a>
+            <a href="https://chorus.fm/share/album/hippo+campus/bambi" target="_blank">
+              <img class="liked-media" src="img/music/bambi.jpg" title="Hippo Campus - Bambi">
+            </a>
+            <a href="https://chorus.fm/share/album/peach+pit/being+so+normal" target="_blank">
+              <img class="liked-media" src="img/music/being_so_normal.jpg" title="Peach Pit - Being So Normal">
+            </a>
+            <a href="https://chorus.fm/share/album/the+menzingers/after+the+party" target="_blank">
+              <img class="liked-media" src="img/music/after_the_party.jpg" title="The Menzingers - After The Party">
+            </a>
+            <a href="https://chorus.fm/share/album/manchester+orchestra/a+black+mile+to+the+surface" target="_blank">
+              <img class="liked-media" src="img/music/a_black_mile_to_the_surface.jpg" title="Manchester Orchestra - A Black Miles To The Surface">
+            </a>
+            <a href="https://chorus.fm/share/album/deafheaven/sunbather" target="_blank">
+              <img class="liked-media" src="img/music/sunbather.jpg" title="Deafheaven - Sunbather">
+            </a>
+            <a href="https://chorus.fm/share/album/american+football/lp3" target="_blank">
+              <img class="liked-media" src="img/music/lp3.jpg" title="American Football - LP3">
+            </a>
+            <a href="https://chorus.fm/share/album/pup/morbid+stuff" target="_blank">
+              <img class="liked-media" src="img/music/morbid_stuff.jpg" title="Pup - Morbid Stuff">
+            </a>
+            <a href="https://chorus.fm/share/album/copeland/you+are+my+sunshine" target="_blank">
+              <img class="liked-media" src="img/music/you_are_my_sunshine.jpg" title="Copeland - You Are My Sunshine">
+            </a>
+            <a href="https://chorus.fm/share/album/dear+and+the+headlights/small+steps,+heavy+hooves" target="_blank">
+              <img class="liked-media" src="img/music/small_steps_heavy_hooves.jpg" title="Dear And The Headlights - Small Steps, Heavy Hooves">
+            </a>
+            <a href="https://chorus.fm/share/album/the+world+is+a+beautiful+place+and+i+am+no+longer+afraid+to+die/harmlessness" target="_blank">
+              <img class="liked-media" src="img/music/harmlessness.jpg" title="TWIABP - Harmlessness">
+            </a>
+            <a href="https://chorus.fm/share/album/sorority+noise/joy,+departed" target="_blank">
+              <img class="liked-media" src="img/music/joy_departed.jpg" title="Sorority Noise - Joy, Departed">
+            </a>
+            <a href="https://chorus.fm/share/album/modern+baseball/holy+ghost" target="_blank">
+              <img class="liked-media" src="img/music/holy_ghost.jpg" title="Modern Baseball - Holy Ghost">
+            </a>
+            <a href="https://chorus.fm/share/album/oso+oso/basking+in+the+glow" target="_blank">
+              <img class="liked-media" src="img/music/basking_in_the_glow.jpg" title="Oso Oso - Basking In The Glow">
+            </a>
+            <a href="https://chorus.fm/share/album/foxing/nearer+my+god" target="_blank">
+              <img class="liked-media" src="img/music/nearer_my_god.jpg" title="Foxing - Nearer My God">
+            </a>
+            <a href="https://chorus.fm/share/album/pianos+become+the+teeth/keep+you" target="_blank">
+              <img class="liked-media" src="img/music/keep_you.jpg" title="Pianos Become The Teeth - Keep You">
+            </a>
+            <a href="https://chorus.fm/share/album/bombay+bicycle+club/so+long,+see+you+tomorrow" target="_blank">
+              <img class="liked-media" src="img/music/so_long_see_you_tomorrow.jpg" title="Bombay Bicycle Club - So Long, See You Tomorrow">
+            </a>
+            <a href="https://chorus.fm/share/album/clairo/immunity" target="_blank">
+              <img class="liked-media" src="img/music/immunity.jpg" title="Clairo - Immunity">
+            </a>
+            <a href="https://chorus.fm/share/album/the+dangerous+summer/mother+nature" target="_blank">
+              <img class="liked-media" src="img/music/mother_nature.jpg" title="The Dangerous Summer - Mother Nature">
+            </a>
+            <a href="https://chorus.fm/share/album/somos/prison+on+a+hill" target="_blank">
+              <img class="liked-media" src="img/music/prison_on_a_hill.jpg" title="Somos - Prison On A Hill">
+            </a>
           </div>
         </div>
       </section>
@@ -305,75 +288,67 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="tv">
         <div class="my-auto">
           <h2 class="mb-5">TV</h2>
-          <div class="row">
-            <div class="column">
-              <a href="https://www.justwatch.com/us/tv-show/arrested-development" target="_blank">
-                <img src="img/tv/arrested_development.jpg" title="Arrested Development">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/californication" target="_blank">
-                <img src="img/tv/californication.jpg" title="Californication">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/fringe" target="_blank">
-                <img src="img/tv/fringe.jpg" title="Fringe">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/nathan-for-you" target="_blank">
-                <img src="img/tv/nathan_for_you.jpg" title="Nathan For You">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/the-office-2005" target="_blank">
-                <img src="img/tv/the_office.jpg" title="The Office">
-              </a>
-            </div>
-            <div class="column">
-              <a href="https://www.justwatch.com/us/tv-show/barry" target="_blank">
-                <img src="img/tv/barry.jpg" title="Barry">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/community" target="_blank">
-                <img src="img/tv/community.jpg" title="Community">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/izombie" target="_blank">
-                <img src="img/tv/izombie.jpg" title="iZombie">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/psych" target="_blank">
-                <img src="img/tv/psych.jpg" title="Psych">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/veep" target="_blank">
-                <img src="img/tv/veep.jpg" title="Veep">
-              </a>
-            </div>
-            <div class="column">
-              <a href="https://www.justwatch.com/us/tv-show/breaking-bad" target="_blank">
-                <img src="img/tv/breaking_bad.jpg" title="Breaking Bad">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/curb-your-enthusiasm" target="_blank">
-                <img src="img/tv/curb_your_enthusiasm.jpg" title="Curb Your Enthusiasm">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/lost" target="_blank">
-                <img src="img/tv/lost.jpg" title="Lost">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/shark-tank" target="_blank">
-                <img src="img/tv/shark_tank.jpg" title="Shark Tank">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/veronica-mars" target="_blank">
-                <img src="img/tv/veronica_mars.jpg" title="Veronica Mars">
-              </a>
-            </div>
-            <div class="column">
-              <a href="https://www.justwatch.com/us/tv-show/brooklyn-nine-nine" target="_blank">
-                <img src="img/tv/brooklyn_nine_nine.jpg" title="Brooklyn Nine-Nine">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/dexter" target="_blank">
-                <img src="img/tv/dexter.jpg" title="Dexter">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/mr-robot" target="_blank">
-                <img src="img/tv/mr_robot.jpg" title="Mr. Robot">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/the-good-place" target="_blank">
-                <img src="img/tv/the_good_place.jpg" title="The Good Place">
-              </a>
-              <a href="https://www.justwatch.com/us/tv-show/westworld" target="_blank">
-                <img src="img/tv/westworld.jpg" title="Westworld">
-              </a>
-            </div>
+          <div class="media-section">
+            <a href="https://www.justwatch.com/us/tv-show/arrested-development" target="_blank">
+              <img class="liked-media" src="img/tv/arrested_development.jpg" title="Arrested Development">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/barry" target="_blank">
+              <img class="liked-media" src="img/tv/barry.jpg" title="Barry">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/breaking-bad" target="_blank">
+              <img class="liked-media" src="img/tv/breaking_bad.jpg" title="Breaking Bad">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/brooklyn-nine-nine" target="_blank">
+              <img class="liked-media" src="img/tv/brooklyn_nine_nine.jpg" title="Brooklyn Nine-Nine">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/californication" target="_blank">
+              <img class="liked-media" src="img/tv/californication.jpg" title="Californication">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/community" target="_blank">
+              <img class="liked-media" src="img/tv/community.jpg" title="Community">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/curb-your-enthusiasm" target="_blank">
+              <img class="liked-media" src="img/tv/curb_your_enthusiasm.jpg" title="Curb Your Enthusiasm">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/dexter" target="_blank">
+              <img class="liked-media" src="img/tv/dexter.jpg" title="Dexter">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/fringe" target="_blank">
+              <img class="liked-media" src="img/tv/fringe.jpg" title="Fringe">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/izombie" target="_blank">
+              <img class="liked-media" src="img/tv/izombie.jpg" title="iZombie">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/lost" target="_blank">
+              <img class="liked-media" src="img/tv/lost.jpg" title="Lost">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/mr-robot" target="_blank">
+              <img class="liked-media" src="img/tv/mr_robot.jpg" title="Mr. Robot">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/nathan-for-you" target="_blank">
+              <img class="liked-media" src="img/tv/nathan_for_you.jpg" title="Nathan For You">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/psych" target="_blank">
+              <img class="liked-media" src="img/tv/psych.jpg" title="Psych">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/shark-tank" target="_blank">
+              <img class="liked-media" src="img/tv/shark_tank.jpg" title="Shark Tank">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/the-good-place" target="_blank">
+              <img class="liked-media" src="img/tv/the_good_place.jpg" title="The Good Place">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/the-office-2005" target="_blank">
+              <img class="liked-media" src="img/tv/the_office.jpg" title="The Office">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/veep" target="_blank">
+              <img class="liked-media" src="img/tv/veep.jpg" title="Veep">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/veronica-mars" target="_blank">
+              <img class="liked-media" src="img/tv/veronica_mars.jpg" title="Veronica Mars">
+            </a>
+            <a href="https://www.justwatch.com/us/tv-show/westworld" target="_blank">
+              <img class="liked-media" src="img/tv/westworld.jpg" title="Westworld">
+            </a>
           </div>
         </div>
       </section>
@@ -381,29 +356,21 @@
       <section class="resume-section p-3 p-lg-5 d-flex flex-column" id="sports">
         <div class="my-auto">
           <h2 class="mb-5">Sports</h2>
-          <div class="row">
-            <div class="column">
-              <a href="https://www.nba.com/blazers/" target="_blank">
-                <img src="img/sports/blazers.png" alt="Blazers">
-              </a>
-            </div>
-            <div class="column">
-              <a href="https://osubeavers.com/" target="_blank">
-                <img src="img/sports/beavers.png" alt="Beavers">
-              </a>
-            </div>
-            <div class="column">
-              <a href="https://www.mlb.com/mariners">
-                <img src="img/sports/mariners.png" alt="Mariners">
-              </a>
-            </div>
-            <div class="column">
-              <a href="https://www.timbers.com/">
-                <img src="img/sports/timbers.png" alt="Timbers">
-              </a>
-            </div>
-          </div>
+          <div class="media-section">
+            <a href="https://www.nba.com/blazers/" target="_blank">
+              <img class="liked-media" src="img/sports/blazers.png" alt="Blazers">
+            </a>
+            <a href="https://osubeavers.com/" target="_blank">
+              <img class="liked-media" src="img/sports/beavers.png" alt="Beavers">
+            </a>
+            <a href="https://www.mlb.com/mariners">
+              <img class="liked-media" src="img/sports/mariners.png" alt="Mariners">
+            </a>
+            <a href="https://www.timbers.com/">
+              <img class="liked-media" src="img/sports/timbers.png" alt="Timbers">
+            </a>
         </div>
+      </div>
       </section>
     </div>
 
@@ -416,7 +383,5 @@
 
     <!-- Custom scripts for this template -->
     <script src="js/resume.min.js"></script>
-
   </body>
-
 </html>
